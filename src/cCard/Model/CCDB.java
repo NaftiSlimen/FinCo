@@ -16,10 +16,11 @@ public class CCDB extends AbstractAccountDB{
 	public static void initDB() {
 		accountDB=new ArrayList<>();
 	}
-	public static AbstractAccount findAccountByNumber(Long accNum) {
-		for (AbstractAccount a:accountDB) {
-			if (a.getaccountNumber()==accNum) return a;
+	public static CreditCardAccount findAccountByNumber(Long accNum) {
+		for (CreditCardAccount a:accountDB) {
+			if (a.getaccountNumber().equals(accNum)) return a;
 		}
+
 		return null;
 	}
 	public static void print() {

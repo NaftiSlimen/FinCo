@@ -7,9 +7,9 @@ import FinCo.model.AbstractAccount;
 import bank.model.BankObserver;
 
 public abstract class CreditCardAccount extends AbstractAccount{
-	private LocalDate expirationDate;
+	private String expirationDate;
 	private CreditCardObserver obs;
-	public CreditCardAccount( Long accountNumber,LocalDate expirationDate) {
+	public CreditCardAccount( Long accountNumber,String expirationDate) {
 		super( accountNumber);
 		this.expirationDate=expirationDate;
 	}

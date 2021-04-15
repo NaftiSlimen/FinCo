@@ -16,10 +16,12 @@ public abstract class AbstractAccount implements IAccount {
 		this.transactions=new ArrayList<>();
 	}
 	public void deposit(Double amount) {
+		System.out.println("this is a deposit");
 		this.balance+=amount;
 		this.addEntry(new Entry(new Deposit(),amount,LocalDateTime.now()));
 	}
 	public void withdraw(Double amount) {
+		System.out.println("this is a withdraw");
 		this.balance-=amount;
 		this.addEntry(new Entry(new Withdraw(),-amount,LocalDateTime.now()));
 	}

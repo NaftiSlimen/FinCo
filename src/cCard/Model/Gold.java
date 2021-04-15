@@ -8,11 +8,11 @@ import FinCo.model.Entry;
 public class Gold  extends CreditCardAccount{
 	private Double Mi;
 	private Double Mp;
-	public Gold( Long accountNumber, LocalDate expirationDate) {
+	public Gold( Long accountNumber, String expirationDate) {
 		super(accountNumber, expirationDate);
 		this.Mi=0.14;
 		this.Mp=0.12;
-		CCDB.addToDB(this);
+		//CCDB.addToDB(this);
 	}
 	
 	

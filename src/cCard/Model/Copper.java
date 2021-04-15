@@ -10,12 +10,12 @@ public class Copper extends CreditCardAccount {
 	private CreditCardObserver obs;
 	private Double Mi=0.20;
 	private Double Mp=0.22;
-	public Copper( Long accountNumber, LocalDate expirationDate) {
+	public Copper( Long accountNumber, String expirationDate) {
 		super(accountNumber, expirationDate);
 		this.Mi=0.20;
 		this.Mp=0.22;
 		this.obs=new CreditCardObserver();
-		CCDB.addToDB(this);
+		//CCDB.addToDB(this);
 	}
 
 	

@@ -8,8 +8,8 @@ import FinCo.model.IAccount;
 import FinCo.model.IPerson;
 
 public class Owner extends AbCustomer implements IPerson{
-	private LocalDate birthDate;
-	public Owner(String name,String emailAdress,LocalDate birthDate) {
+	private String birthDate;
+	public Owner(String name,String emailAdress,String birthDate) {
 		super(name,emailAdress);
 		this.birthDate=birthDate;
 	}

@@ -9,11 +9,11 @@ public class Silver  extends CreditCardAccount{
 	
 	private Double Mi;
 	private Double Mp;
-	public Silver( Long accountNumber, LocalDate expirationDate) {
+	public Silver( Long accountNumber, String expirationDate) {
 		super( accountNumber, expirationDate);
 		this.Mi=0.18;
 		this.Mp=0.14;
-		CCDB.addToDB(this);
+		//CCDB.addToDB(this);
 	}
 	public void addIntrest() {
 		this.Mi+=0.01;
